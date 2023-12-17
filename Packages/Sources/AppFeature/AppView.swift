@@ -10,6 +10,12 @@ public struct AppView: View {
             List(Country.all) { country in
                 HStack {
                     Text(country.name)
+                    if let image = country.image {
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 40, height: 40)
+                    }
                     Spacer()
                     VStack {
                         Text(country.continent.name)
