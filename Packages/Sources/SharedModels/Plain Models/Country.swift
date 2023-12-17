@@ -14,3 +14,9 @@ public struct Country: Hashable, Codable {
     public let currency: CurrencyCode?
     public let continent: Continent
 }
+
+extension Country: Identifiable {
+    public var id: String {
+        return code
+    }
+}

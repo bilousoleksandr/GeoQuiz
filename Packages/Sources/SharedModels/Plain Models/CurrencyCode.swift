@@ -184,7 +184,7 @@ public enum CurrencyCode: String, CaseIterable, Codable {
     case ZMW
     case ZWL
     
-    var symbol: String {
+    public var symbol: String {
         switch self {
         case .AED:
             return "د.إ"

@@ -15,7 +15,11 @@ public enum Continent: CaseIterable, Hashable, Codable {
     case oceania
     case northAmerica
     case southAmerica
-    
+}
+
+// MARK: - Name
+
+extension Continent {
     public var name: String {
         switch self {
         case .africa:

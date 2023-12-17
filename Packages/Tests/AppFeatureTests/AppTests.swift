@@ -9,7 +9,7 @@ final class MainTests: XCTestCase {
         }
         
         let first = Item(id: .init())
-        var second = first
+        let second = first
 
         XCTAssertEqual(first, second)
         XCTAssertNoDifference(first, second)
